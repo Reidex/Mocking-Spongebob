@@ -1,0 +1,33 @@
+<script>
+    function cApItAlIzEeVeRyOtHeRlEtTeR(str) {
+        var letter_arr = str.split('');
+        for (var i=0; i<letter_arr.length; i += 2)
+        {
+            letter_arr[i]=letter_arr[i].toUpperCase();
+        }
+
+        return new String(letter_arr.join(''));
+    }
+
+    function mockify() {
+        var input = document.getElementById("input").value;
+        document.getElementById("output").value = cApItAlIzEeVeRyOtHeRlEtTeR(input);
+    }
+</script>
+
+<html>
+    <body> 
+        <br>
+        <h1 style="text-align:center;"> Mocking Spongebob </h1>
+        <p style="text-align:center;"><img src="mockbob.jpg" width="360" height="360"></p>
+
+        <br><br>
+
+        <p style="text-align:center;"><input id="input" type="text" style="font-size:15px;width:350;height:25;"></input>
+        <br>
+        <p style="text-align:center;"><button style="font-size:17px;width:150;height:40;"><a onclick="mockify()">Mockify Text</button>
+        <br>
+        <p style="text-align:center;"><input id="output" readonly="true" style="font-size:15px;width:350;height:25;"></input>
+
+    </body>
+</html>
